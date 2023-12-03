@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Quick Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="heading">
+    <h1 id=title>A Quick Survey form</h1>
+    <p id="description">This is a survey on the improvement of ou service in the product we provide for our custmers.</p>
+    </div>
+    <div id="main">
+        <form id="survey-form">
+        <div id="input-area">
+            <label id="name-label"><b>Name:</b></label>
+            <input id="name" type="name" name="name" class="form" required placeholder="Full Name"><br>
+            <br>
+            <label id="email-label"><b>Email:</b></label>
+            <input id="email" type="email" name="email" class="form" required placeholder="example@mail.com"><br>
+            <br>
+            <label id="number-label"><b>Age:</b></label>
+            <input id="number" type="number" name="number" class="form" min="18" max="99" placeholder="12+">
+         </div>
+         <div id="dropdown-div"><br>
+            <label id="dropdown-label"><strong>What is your current Status: </strong></label><br>
+            <select id="dropdown" name="staus" class="form">
+                <option value="highschool">Highschool Student</option>
+                <option value="Undergraduate">Undergraduate Student</option>
+                <option value="Graduate">Graduate Student</option>
+                <option value="Employee">Employee</option>
+                <option value="Enterpurnuer">Enterpurnuer</option>
+                <option value="other">Other</option>
+    
+            </select>
+         </div>
+         <div id="button-area">
+             <br>
+            <label id="hear-label"><b>What kind of business do you have?</b>
+            <br></label><br>
+            <input type="radio" class="radio-inline" name="radio1" value="social-media" checked> Online shop<br>
+            <input type="radio" class="radio-inline" name="radio1" value="store">Store<br>
+            <input type="radio" class="radio-inline" name="radio1" value="remote-shop">Remote Shop<br>
+            <input type="radio" class="radio-inline" name="radio1" value="friends"> other<br>
+            
+          </div>
+           <div id="button-area">
+             <br>
+            <label id="hear-label"><b>Where did you hear about us?</b></label><br><br>
+            <input type="radio" class="radio-inline" name="radio2" value="social-media" checked> Social Media<br>
+            <input type="radio" class="radio-inline" name="radio2" value="website-ad">Website Ad<br>
+            <input type="radio" class="radio-inline" name="radio2" value="friends"> Friends<br>
+            <input type="radio" class="radio-inline" name="radio2" value="other"> Other
+          </div>
+
+          <div id="button-area"><br>
+            <label id="get-label"><b>Where do you get our product from? </b>
+            <br></label><br>
+            <input type="checkbox" name="mart" value="mart" checked> Our mart<br>
+            <input type="checkbox" name="retail-store" value="store"> A retail store <br>
+            <input type="checkbox" name="other" value="other"> Other<br>
+          </div>
+
+          <div id="ending"><br><br>
+            <label id="comments-label">Do you have any suggestion about this survey?</label><br>
+            <br>
+            <textarea style= height:120px;" class="form" placeholder="Please feel free to write a review..."></textarea><br><br>
+            <input id="submit" type="submit"  class="form" value="SUBMIT">
+          </div>
+        </form>
+    </div>
+
+</body>
+</html>
+
+
+body {
+    font-family: 'Century', sans-serif;
+    width: 100%;
+    height: auto;
+    background-color: #83A2FF;
+    color: 22092C;
+    font-size: 3vw;
+   }
+   #heading{
+       max-width:auto;
+       margin: 1rem auto;
+    padding: .6rem;
+   }
+#main{
+    padding: 0% 20% 0% 20%;
+}
+#title{
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1.2;
+    padding: .6rem;
+
+}
+#description{
+    font-size: 1.1rem;
+    text-align: center;
+    padding: .2rem;
+}
+
+#survey-form {
+    background-color: #B4BDFF;
+    padding: 2rem 2.5rem;
+    border-radius: 30px;
+}
+submit{
+    background:#872341;
+    color: #fff;
+    padding: .7rem;
+    font-size:2rem;
+    cursor: pointer;
+
+}
+  #submit:hover {
+    background: #F05941;
+    }
+
+.form {
+  width: 100%;
+  padding: .7rem;
+  border-radius: 6px;
+  font-size: 1.0rem;
+  border: none;
+  }
+
+
